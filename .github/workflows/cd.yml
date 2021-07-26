@@ -23,6 +23,7 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
-        port: 21
+        port: ${{ secrets.FTP_PORT }}
         local-dir: ./public/
-        server-dir: ./public_html/
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        state-name: .ftp-deploy-de-hannesdaus-sync-state.json
