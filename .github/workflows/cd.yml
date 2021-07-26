@@ -26,4 +26,4 @@ jobs:
         port: ${{ secrets.FTP_PORT }}
         local-dir: ./public/
         server-dir: ${{ secrets.FTP_SERVER_DIR }}
-        state-name: .ftp-deploy-de-hannesdaus-sync-state.json
+        state-name: ${{ secrets.FTP_STATE_NAME }}
